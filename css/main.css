@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to bottom, #13132b, #1e4681);
-  font-family: "Poppins";
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
 }
 
 a {

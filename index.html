@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- * There are all used CSS files for each section in the page -->
+    <link rel="stylesheet" href="css/setting.css">
+
     <!-- * This is just a html5shiv js -->
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -28,6 +31,42 @@
 </head>
 
 <body>
+    <section id="quiz" class="quiz"></section>
+
+    <section id="setting" class="setting">
+        <div class="setting__number-questions">
+            <input type="number" id="nQuestion" class="setting__number-questions__input"
+                placeholder="number of the questions">
+        </div> <!-- ./setting__number-questions -->
+
+        <div class="setting__category">
+            <label for="category">category</label>
+
+            <!-- * These values we can obtain from the API which we used in this app -->
+            <select name="category" id="category" class="setting__category__select">
+                <option value="9">General Knowledge</option>
+                <option value="21">Sports</option>
+                <option value="25">art</option>
+                <option value="23">history</option>
+                <option value="18">science: computers</option>
+            </select> <!-- ./category -->
+        </div> <!-- ./setting__category -->
+
+        <div class="setting_difficulty">
+            <h5 class="setting_difficulty__title">difficulty</h5>
+            <input type="radio" name="difficulty" id="easy">
+            <label for="easy">easy</label>
+
+            <input type="radio" name="difficulty" id="medium">
+            <label for="medium">medium</label>
+
+            <input type="radio" name="difficulty" id="hard">
+            <label for="hard">hard</label>
+        </div> <!-- ./setting_difficulty -->
+
+        <button class="setting_btn" id="settingBtn">submit</button>
+
+    </section> <!-- ./setting -->
     <script type="module" src="js/main.js"></script>
 </body>
 
